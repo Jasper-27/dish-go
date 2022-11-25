@@ -177,6 +177,7 @@ func messageHandler(s *discordgo.Session, m *discordgo.MessageCreate) {
 		}
 	}
 
+	//log of all messages sent in the chat
 	p(m.Author.Username, ": ", m.Content)
 
 }
